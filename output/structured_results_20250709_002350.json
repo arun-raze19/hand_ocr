@@ -1,0 +1,91 @@
+[
+  {
+    "document_info": {
+      "document_type": "prescription form",
+      "document_number": null,
+      "document_date": null,
+      "reference_number": null
+    },
+    "vendor": {
+      "name": "Dr. Richard Evans",
+      "email": null,
+      "phone": "(03) 365 6713",
+      "address": "Ga Selwyn St",
+      "city": null,
+      "state": null,
+      "postal_code": null,
+      "country": null
+    },
+    "customer": {
+      "name": "Rachel",
+      "email": null,
+      "phone": null,
+      "address": null,
+      "city": null,
+      "state": null,
+      "postal_code": null,
+      "country": null
+    },
+    "line_items": [
+      {
+        "item_name": "fun",
+        "quantity": null,
+        "unit_price": "0.0",
+        "total_price": "0.0",
+        "item_code": null,
+        "category": null
+      },
+      {
+        "item_name": "frustration",
+        "quantity": null,
+        "unit_price": "0.0",
+        "total_price": "0.0",
+        "item_code": null,
+        "category": null
+      },
+      {
+        "item_name": "play",
+        "quantity": null,
+        "unit_price": "0.0",
+        "total_price": "0.0",
+        "item_code": null,
+        "category": null
+      },
+      {
+        "item_name": "time",
+        "quantity": null,
+        "unit_price": "0.0",
+        "total_price": "0.0",
+        "item_code": null,
+        "category": null
+      },
+      {
+        "item_name": "materials",
+        "quantity": null,
+        "unit_price": "0.0",
+        "total_price": "0.0",
+        "item_code": null,
+        "category": null
+      }
+    ],
+    "subtotal": "0.0",
+    "tax_info": {
+      "tax_rate": null,
+      "tax_amount": "0.0",
+      "tax_type": null
+    },
+    "total_amount": "0.0",
+    "payment_info": {
+      "payment_method": null,
+      "payment_terms": null,
+      "due_date": null,
+      "paid_amount": "0.0",
+      "balance_due": "0.0"
+    },
+    "notes": "The document appears to be a mock or altered prescription form used for a humorous or non-medical purpose.",
+    "currency": "NZD",
+    "source_filename": "invoice.png",
+    "processed_at": "2025-07-09 00:23:50.598700",
+    "confidence_score": null
+  }
+]

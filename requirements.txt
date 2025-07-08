@@ -1,0 +1,19 @@
+# Core dependencies
+langchain-groq==0.1.9
+python-dotenv==1.0.0
+Pillow==10.1.0
+
+# Structured data and document processing
+pydantic==2.5.0
+docling==1.15.0
+pandas==2.1.4
+
+# Enhanced functionality
+opencv-python==4.8.1.78
+numpy==1.24.3
+matplotlib==3.7.2
+
+# Development dependencies (optional)
+pytest==7.4.3
+black==23.9.1
+flake8==6.1.0

@@ -1,0 +1,43 @@
+{
+  "models": {
+    "vision_model": "meta-llama/llama-4-scout-17b-16e-instruct",
+    "text_model": "llama-3.3-70b-versatile"
+  },
+  "processing": {
+    "default_sections": 3,
+    "max_sections": 6,
+    "section_overlap": 0.2,
+    "image_quality": 95,
+    "enable_structured_extraction": true
+  },
+  "image_enhancement": {
+    "contrast_factor": 1.8,
+    "sharpness_factor": 2.2,
+    "enable_preprocessing": true,
+    "auto_contrast": true
+  },
+  "output": {
+    "save_json": true,
+    "save_csv_summary": true,
+    "save_csv_detailed": true,
+    "save_individual_files": false,
+    "include_metadata": true,
+    "csv_format": "both"
+  },
+  "structured_fields": {
+    "vendor_fields": ["name", "email", "phone", "address", "city", "state", "postal_code", "country"],
+    "customer_fields": ["name", "email", "phone", "address", "city", "state", "postal_code", "country"],
+    "document_fields": ["document_type", "document_number", "document_date", "reference_number"],
+    "financial_fields": ["subtotal", "tax_rate", "tax_amount", "total_amount", "currency"],
+    "item_fields": ["item_name", "quantity", "unit_price", "total_price", "item_code", "category"]
+  },
+  "prompts": {
+    "ocr_prompt": "You are an expert in reading handwritten text. Please carefully analyze this image and extract ALL handwritten text you can see. Pay special attention to: 1. Cursive and script handwriting 2. Print handwriting 3. Numbers and dates 4. Signatures and names 5. Any annotations or notes. Please transcribe the text exactly as written, maintaining the original structure and line breaks. If text is unclear, indicate with [unclear] but still provide your best interpretation. If you see printed text mixed with handwritten text, clearly distinguish between them.",
+    "consolidation_prompt": "You are provided with multiple text extractions from overlapping sections of a handwritten document. Some sections may contain duplicate or partially repeated content due to overlaps. Your task is to: 1. Identify and remove duplicate content while preserving the complete text 2. Maintain the original structure and flow of the handwritten document 3. Resolve any conflicts by choosing the most complete/accurate version 4. Preserve line breaks and paragraph structure 5. Keep any formatting indicators like [unclear] if present. Return only the consolidated, clean text without any additional comments."
+  },
+  "supported_formats": [".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".tif"],
+  "directories": {
+    "input": "input_images",
+    "output": "output"
+  }
+}
